@@ -9,15 +9,15 @@
 import UIKit
 
 struct JSONObject {
-//    
-//    var formatDataInfo:Dictionary<String, FormatData?>
-//    
-//    init() {
-//        formatDataInfo = Dictionary<String, FormatData>()
-//    }
-//    
-//    // key と valueとrestrictionをmapしたもの
-//    mutating func set(key:String,formatData:FormatData) {
-//        formatDataInfo[key] = formatData
-//    }
+
+    var validatableDataInfo = Dictionary<String, Validatable>()
+    
+    // key と valueとrestrictionをmapしたもの
+    mutating func addFormatData(key:String, formatData:Validatable) {
+        validatableDataInfo[key] = formatData
+    }
+    
+    internal func getValidatableDataInfo() -> Dictionary<String, Validatable>{
+        return validatableDataInfo
+    }
 }

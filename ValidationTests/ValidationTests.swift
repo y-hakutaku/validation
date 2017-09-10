@@ -22,8 +22,11 @@ class ValidationTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let format = FormatDataForString(value:"bob",restriction:Restriction.String(key: "name", mandatory: false, regex: nil, min: 0, max: 10))
+        var obj = JSONObject();
+        obj.addFormatData(key: "name", formatData: format)
+        let builder = JSONBuilder(jsonObject: obj)
+        builder.jsonString()
     }
     
     func testPerformanceExample() {
