@@ -2,7 +2,7 @@
 //  ValidationResult.swift
 //  Validation
 //
-//  Created by 白澤 義康 on 7/4/17.
+//  Created by y_hakutaku on 7/4/17.
 //  Copyright © 2017 y_hakutaku. All rights reserved.
 //
 
@@ -32,7 +32,6 @@ struct ValidationResult {
         }
     }
     
-    // TODO
     func hasError() -> Bool {
         if Array(error.keys).count == 0 {
             return false

@@ -2,7 +2,7 @@
 //  FormatDataForString.swift
 //  Validation
 //
-//  Created by 白澤 義康 on 7/1/17.
+//  Created by y_hakutaku on 7/1/17.
 //  Copyright © 2017 y_hakutaku. All rights reserved.
 //
 
@@ -14,14 +14,14 @@ struct FormatDataForString: Validatable{
     var value:String? = nil
     var restriction:Restriction
     
-    // deta
+    // data
     init(value:String?, restriction:Restriction) {
         self.value = value
         self.restriction = restriction
     }
+    // restrictionは内部で持つのでも良いかも
     
-    // validation 処理自体は分けるのでもいいかも。
-    // コンポジション
+    // validation 
     func validate() -> ValidationResult {
         
         var result = ValidationResult();

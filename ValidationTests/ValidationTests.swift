@@ -2,7 +2,7 @@
 //  ValidationTests.swift
 //  ValidationTests
 //
-//  Created by 白澤 義康 on 7/1/17.
+//  Created by y_hakutaku on 7/1/17.
 //  Copyright © 2017 y_hakutaku. All rights reserved.
 //
 
